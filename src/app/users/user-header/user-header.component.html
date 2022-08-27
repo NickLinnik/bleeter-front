@@ -1,0 +1,13 @@
+<div class="profile-container container border mt-5 p-3">
+  <div class="profile__description">
+    <img class="profile__avatar" src="https://picsum.photos/200" alt="user profile avatar">
+    <div>
+      <app-user-signature [userName]="user.userName" [login]="user.login"></app-user-signature>
+      <p class="mb-0">
+        Joined
+        {{user.createdAt.toLocaleDateString('default', { month: 'long' })}}
+        {{user.createdAt.getFullYear()}}
+      </p>
+    </div>
+  </div>
+</div>

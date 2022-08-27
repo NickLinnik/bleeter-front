@@ -1,0 +1,26 @@
+<article class="container container-sm bg-white border border-2 profile-container mt-4">
+  <div class="p-2">
+    <!--Author-->
+    <div class="d-flex mb-2 border-bottom">
+      <img class="avatar-post me-2" src="https://picsum.photos/200" alt="user profile image">
+      <app-user-signature [userName]="author.userName" [login]="author.login"></app-user-signature>
+    </div>
+
+    <!--Body-->
+    <p class="border-bottom pb-2 mb-2">{{post.text}}</p>
+
+    <!-- Footer-->
+    <div class="d-flex">
+      <div class="d-flex justify-content-between align-items-center me-3">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="like icon">
+        <p class="m-0">19456</p>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png"
+             alt="comment icon">
+        <p class="m-0">Comment</p>
+      </div>
+
+    </div>
+  </div>
+</article>

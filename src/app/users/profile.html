@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .red {
+            border: 1px solid red;
+        }
+
+        .profile-container {
+            max-width: 90%;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        .profile__avatar {
+            width: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            height: 100px;
+            margin-bottom: 0.5em;
+        }
+
+        .profile__description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page-background {
+            background-color: #f5f3f3;
+        }
+
+        .profile__statistics {
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .profile__statistics + .profile__statistics {
+            margin: 0 0 0 0.4em;
+        }
+
+        .avatar-post {
+            width: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            height: 50px;
+        }
+
+        .icon {
+            max-width: 24px;
+            margin-right: 0.25em;
+        }
+
+        @media only screen and (min-width: 590px) {
+            .profile__description {
+                flex-direction: row;
+            }
+
+            .profile__avatar {
+                margin-right: 2em;
+            }
+        }
+
+        @media only screen and (min-width: 700px) {
+            .profile-container {
+                max-width: 670px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="page-background pb-5 overflow-auto">
+        <div class="profile-container container border mt-5">
+            <div class="profile__description">
+                <img class="profile__avatar" src="https://picsum.photos/500" alt="user profile avatar">
+                <div>
+                    <p class="fw-bold text-center">The best user ever</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+                    <div class="d-flex justify-content-between pb-2 pt-2 border-top w-100">
+                        <p class="profile__statistics">100 Posts</p>
+                        <p class="profile__statistics">245 Followers</p>
+                        <p class="profile__statistics">20 Following</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article class="container container-sm bg-white border border-2 profile-container mt-4">
+            <div class="p-2">
+                <!--Author-->
+                <div class="d-flex mb-2 border-bottom pb-2">
+                    <img class="avatar-post me-2" src="https://picsum.photos/200" alt="user profile image">
+                    <p class="align-self-center mb-0 fw-bold">Author name</p>
+                </div>
+
+                <!--Body-->
+                <p class="border-bottom pb-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                    dignissim
+                    lectus augue, vel cursus ipsum
+                    vestibulum at. In gravida quam ut convallis tincidunt. Phasellus orci sapien, lacinia quis odio eu,
+                    suscipit
+                    tristique libero. Donec et porta ligula, nec sagittis metus. Praesent non tincidunt risus. Quisque
+                    non
+                    ligula egestas tellus aliquet efficitur eget id odio. Proin eget euismod lorem, id tincidunt magna.
+                    Donec et
+                    luctus mauris. Sed ac urna id eros auctor aliquet. Etiam a ullamcorper lectus, nec molestie ex.
+                    Nullam
+                    aliquet, sem et convallis sollicitudin, orci neque dapibus ante, at volutpat risus libero in augue.
+                    Sed
+                    id
+                    feugiat neque. Integer gravida in velit bibendum accumsan. Donec vitae turpis sagittis, tempus odio
+                    ut,
+                    facilisis ex. Sed non erat risus.
+                </p>
+
+                <!-- Footer-->
+                <div class="d-flex">
+                    <div class="d-flex justify-content-between align-items-center me-3">
+                        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="like icon">
+                        <p class="m-0">19456</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png"
+                             alt="comment icon">
+                        <p class="m-0">Comment</p>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+        <article class="container container-sm bg-white border border-2 profile-container mt-4">
+            <div class="p-2">
+                <!--Author-->
+                <div class="d-flex mb-2 border-bottom pb-2">
+                    <img class="avatar-post me-2" src="https://picsum.photos/200" alt="user profile image">
+                    <p class="align-self-center mb-0 fw-bold">Author name</p>
+                </div>
+
+                <!--Body-->
+                <p class="border-bottom pb-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                    dignissim
+                    lectus augue, vel cursus ipsum
+                    vestibulum at. In gravida quam ut convallis tincidunt. Phasellus orci sapien, lacinia quis odio eu,
+                    suscipit
+                    tristique libero. Donec et porta ligula, nec sagittis metus. Praesent non tincidunt risus. Quisque
+                    non
+                    ligula egestas tellus aliquet efficitur eget id odio. Proin eget euismod lorem, id tincidunt magna.
+                </p>
+
+                <!-- Footer-->
+                <div class="d-flex">
+                    <div class="d-flex justify-content-between align-items-center me-3">
+                        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="like icon">
+                        <p class="m-0">289</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png"
+                             alt="comment icon">
+                        <p class="m-0">Comment</p>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+</body>
+</html>

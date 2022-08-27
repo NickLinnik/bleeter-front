@@ -1,0 +1,9 @@
+<div class="page-background pb-5 overflow-auto">
+  <app-user-header [user]="user"></app-user-header>
+
+  <div>
+    <div *ngFor="let post of posts">
+      <app-post *ngIf="post" [post]="post"></app-post>
+    </div>
+  </div>
+</div>
